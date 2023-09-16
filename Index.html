@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="protfolio.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="protfolio.js"></script>
+    <script src="typewriter.js"></script>
+    <script src="fontasome.js"></script>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div>
+                    <img src="image/Ak.png" alt="logo" class="logo">
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-regular fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span class="auto-input"></span><br> From India</h1>
+                <p>You can reach out to me if you need any help in making a <br> website for you or your business.</p>
+                <a href="">Contact Me</a>
+                <a href="Akhil_Update_1.pdf" download class="download">Download CV</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/akhil.png" alt="akhil">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p></p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTag('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTag('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTag('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span class="text-title">LANGUAGE</span><br><span class="text-desc">Javascript, Basic
+                                    Java</span></li>
+                            <br>
+                            <li><span class="text-title">LIBRARY & FRAMEWORK</span><br>ReactJS, Bootstrap</li>
+                            <br>
+                            <li><span class="text-title">DATABASE</span><br>NoSQL, MySQL</li>
+                            <br>
+                            <li><span class="text-title">TOOLS</span><br>VS Code, Intellij</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span class="text-title">LABHANYA INFOTECH</span><br><span class="text-desc">MERN Stack Developer (2021 - Present)</span></li>
+                            <br>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span class="text-title">2021</span><br><span class="text-desc">Bachelor of Science(Computer Science)</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I have 2.6 years of experience in web development, 
+                        during which I have honed my skills in creating dynamic 
+                        and responsive websites. My expertise includes front-end 
+                        technologies like HTML, CSS, and JavaScript, as well as 
+                        proficiency in popular frameworks like React and Angular. 
+                        I have also worked extensively with back-end technologies 
+                        such as Node.js and Express.js, and I am proficient in
+                         database management using SQL and NoSQL databases like MySQL and MongoDB.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Design</h2>
+                    <p>In my 2.6 years of web design experience, I've honed my 
+                        skills in crafting visually stunning and user-focused websites. 
+                        Proficient in UI/UX design, I prioritize intuitive interfaces 
+                        through wireframing, prototyping, and usability testing. 
+                        I ensure seamless functionality on all devices with responsive 
+                        design and CSS frameworks like Bootstrap. My HTML5 and CSS3 expertise
+                        transforms design concepts into pixel-perfect, high-performance web pages.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h2>MERN Stack Developer</h2>
+                    <p>Over my 2.6 years as a MERN stack developer, 
+                       I've become adept at crafting resilient and scalable web applications. 
+                       My journey in this dynamic field has led to a comprehensive skill set:
+                       In front-end development, React is my playground. I've crafted dynamic
+                       and responsive interfaces that prioritize user experience. 
+                       Leveraging React's component-based architecture, 
+                       I ensure code efficiency and maintainability.
+                       For the back-end, my proficiency with Node.js and Express.js shines. 
+                       I've constructed RESTful APIs and robust server-side logic, 
+                       enabling seamless communication between front-end and back-end components.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">My Portfolio</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/bank.png" alt="bank">
+                    <div class="layer">
+                        <h3>Banking Application</h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/data.png" alt="akhil">
+                    <div class="layer">
+                        <h3>Databuilder</h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/rest.png" alt="akhil">
+                    <div class="layer">
+                        <h3>Point Of Sell(POS)</h3>
+                        <p></p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>akhil.zade@outlook.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 9730927203</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/akhil-zade-a6b152281/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/akhilza"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.youtube.com/channel/UC1ON8o9T5LF5KpSzMZgXnYQ"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                   <form name="submit-to-google-sheet">
+                      <input type="text" name="Name" placeholder="Your Name" required>
+                      <input type="email" name="Email" placeholder="Your Email" required>
+                      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                      <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ Akhil. <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+        var typed = new Typed('.auto-input', {
+            strings: ['Akhil Zade', 'Web Developer', 'MERN Stack Developer'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
+
+
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
+
+        function openTag(tabName) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove("active-link");
+            }
+
+            for (tabContent of tabContents) {
+                tabContent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab")
+        }
+
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openMenu(){
+            sidemenu.style.right = "0"
+        }
+         
+        function closeMenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby82clpO8IFdzPN-qtKHKoa7PRruSMtzvUyiyMQh3HWmV2RodNmePsTrYkYsGCBlfbd/exec'
+        const form = document.forms['submit-to-google-sheet']
+       const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
